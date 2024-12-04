@@ -57,7 +57,7 @@ const Footer = () => {
               Karan Pareek
             </h3>
             <p className="text-slate-400 max-w-xs">
-              Crafting beautiful web experiences with modern technologies and creative design.
+              Creating App Website and many more
             </p>
             {isVisible && (
               <motion.button
