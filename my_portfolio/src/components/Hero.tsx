@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Github, Linkedin, Mail } from 'lucide-react';
@@ -8,16 +7,16 @@ import ProfilePhoto from './ui/ProfilePhoto';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden" id='home'>
+    <section className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden pt-16 sm:pt-24" id='home'>
       <Scene />
       <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/50 to-slate-900" />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-12"
+        className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12"
       >
-        <div className="flex-1 max-w-2xl">
+        <div className="flex-1 max-w-2xl w-full">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -26,7 +25,7 @@ const Hero = () => {
           >
             <div className="inline-block p-2">
             </div>
-            <h2 className="text-6xl sm:text-7xl font-bold text-slate-100 mb-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-100 mb-4">
               Hi, I'm{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-pink-600 relative">
                 Karan Pareek
@@ -39,7 +38,7 @@ const Hero = () => {
               </span>
             </h2>
           </motion.div>
-          <div className="text-2xl sm:text-3xl text-slate-300 font-medium mb-8 h-[40px]">
+          <div className="text-xl sm:text-2xl lg:text-3xl text-slate-300 font-medium mb-8 h-[40px]">
             <TypeAnimation
               sequence={[
                 'Fullstack Developer',
@@ -57,7 +56,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg text-slate-400 mb-8 leading-relaxed max-w-2xl backdrop-blur-sm bg-slate-900/30 p-4 rounded-lg"
+            className="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed max-w-2xl backdrop-blur-sm bg-slate-900/30 p-4 rounded-lg"
           >
             A passionate developer with a keen eye for crafting innovative and user-friendly digital solutions. 
             I specialize in software development, Android app development, and full-stack web technologies, delivering seamless and efficient user experiences.
@@ -66,7 +65,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex gap-4"
+            className="flex flex-wrap gap-4"
           >
             <GlowingButton href="#contact" primary>
               Get in Touch
@@ -103,7 +102,7 @@ const Hero = () => {
             ))}
           </motion.div>
         </div>
-        <div className="md:flex-shrink-0">
+        <div className="lg:flex-shrink-0 mt-8 lg:mt-0">
           <ProfilePhoto />
         </div>
       </motion.div>
@@ -112,3 +111,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

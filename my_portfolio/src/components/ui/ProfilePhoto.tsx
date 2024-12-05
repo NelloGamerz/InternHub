@@ -8,7 +8,7 @@ const ProfilePhoto: React.FC = () => {
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, delay: 0.3 }}
-      className="relative w-[400px] h-[500px] group"
+      className="relative w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] aspect-[4/5] mx-auto group"
     >
       {/* Decorative background elements */}
       <div className="absolute -inset-4 bg-gradient-to-r from-violet-600/20 to-pink-600/20 blur-2xl rounded-lg group-hover:from-violet-600/30 group-hover:to-pink-600/30 transition-colors duration-500" />
@@ -32,7 +32,7 @@ const ProfilePhoto: React.FC = () => {
             
             {/* Profile image */}
             <img
-              srcSet={My_Image}
+              src={My_Image}
               alt="Profile"
               className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-out"
             />
@@ -50,7 +50,7 @@ const ProfilePhoto: React.FC = () => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.8 + index * 0.1, duration: 0.4 }}
-              className={`absolute w-8 h-8 ${position} from-violet-600/20 to-transparent`}
+              className={`absolute w-6 sm:w-8 h-6 sm:h-8 ${position} from-violet-600/20 to-transparent`}
             />
           ))}
         </div>

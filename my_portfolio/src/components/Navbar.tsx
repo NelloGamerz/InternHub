@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <motion.a
             href="#"
-            className="text-xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 text-transparent bg-clip-text"
+            className="text-lg sm:text-xl font-bold bg-gradient-to-r from-violet-400 to-pink-400 text-transparent bg-clip-text"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -42,12 +42,12 @@ const Navbar = () => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <motion.a
                 key={item.name}
                 href={item.href}
-                className="text-slate-300 hover:text-violet-400 transition-colors"
+                className="text-sm lg:text-base text-slate-300 hover:text-violet-400 transition-colors"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -61,7 +61,8 @@ const Navbar = () => {
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-slate-300 hover:text-violet-400 transition-colors"
+              className="text-slate-300 hover:text-violet-400 transition-colors p-2"
+              aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
@@ -76,14 +77,15 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
             className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800"
           >
-            <div className="px-4 py-4 space-y-2">
+            <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => (
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="block py-2 text-slate-300 hover:text-violet-400 transition-colors"
+                  className="block py-2 text-base text-slate-300 hover:text-violet-400 transition-colors"
                   whileHover={{ x: 4 }}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -99,3 +101,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

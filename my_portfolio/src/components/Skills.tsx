@@ -1,6 +1,4 @@
-'use client'
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Card from './ui/Card';
 import SectionTitle from './ui/SectionTitle';
@@ -22,6 +20,7 @@ const skillCategories = [
       { name: 'Firebase', level: 80 },
       { name: 'MongoDB', level: 80},
       { name: 'Android Studio', level : 80},
+      { name: 'Google Cloud', level: 80},
     ]
   },
   {
@@ -49,6 +48,7 @@ const skillCategories = [
     skills: [
       { name: 'Git', level: 80 },
       { name: 'Android Studio', level : 80},
+      { name: 'Google Cloud', level: 80},
     ]
   },
   {
