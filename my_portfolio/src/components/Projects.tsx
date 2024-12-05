@@ -188,7 +188,7 @@ import music from '../../public/images/Music App Image.jpg';
 const projects = [
   {
     title: 'Music Streaming App',
-    description: 'A modern Music Streaming Android App built with Kotlin and Firebase.',
+    description: 'A modern Music Streaming Android App built with kotiln and Firebase.',
     image: music,
     tech: ['Kotlin', 'Firebase'],
     github: 'https://github.com/NelloGamerz/Music',
@@ -196,19 +196,19 @@ const projects = [
   },
   {
     title: 'SkyCast',
-    description: 'Weather Website made with React and TypeScript.',
+    description: 'Weather Websiter made with React and TypeScript.',
     image: skyCast,
-    tech: ['React', 'Tailwind CSS'],
+    tech: ['React', 'Tailwwind CSS'],
     github: 'https://github.com/NelloGamerz/Weather-App',
     live: 'https://sky-cast-lake.vercel.app/'
   },
   {
     title: 'Chrome Extension',
-    description: 'A chrome extension for YouTube to increase user productivity.',
+    description: 'A chrome extension for youtube to increase users productivity.',
     image: extension,
-    tech: ['JavaScript', 'JSON'],
-    live: 'https://chromewebstore.google.com/detail/smart-youtube-playpause/bcecakogomgpaegeaadmneppajo'
-  },
+    tech: ['Java Script','JSON'],
+    live: 'https://chromewebstore.google.com/detail/smart-youtube-playpause/bcecakogomgpaegeajbgeaadmneppajo'
+  },  
 ];
 
 const Projects = () => {
