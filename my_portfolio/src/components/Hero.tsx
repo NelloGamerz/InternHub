@@ -59,7 +59,7 @@ const Hero = () => {
             className="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed max-w-2xl backdrop-blur-sm bg-slate-900/30 p-4 rounded-lg"
           >
             A passionate developer with a keen eye for crafting innovative and user-friendly digital solutions. 
-            I specialize in software development, Android app development, and full-stack web technologies, delivering seamless and efficient user experiences.
+            I specialize in software development, Android app development and full-stack web technologies, delivering seamless and efficient user experiences.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
