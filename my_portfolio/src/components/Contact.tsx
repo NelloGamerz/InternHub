@@ -68,7 +68,7 @@ const Contact = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(236,72,153,0.1),transparent_50%)]" />
           <div className="relative z-10">
             <SectionTitle>Get in Touch</SectionTitle>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8"> {/* Update 1: Changed md to lg */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold text-slate-100 mb-4">Contact Information</h3>
                 <div className="space-y-4">
@@ -87,8 +87,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 {[
                   { id: 'name', type: 'text', label: 'Name', required: true },
-                  { id: 'email', type: 'email', label: 'Email', required: true },
-                  { id: 'message', type: 'text', label: 'Message', required: true }
+                  { id: 'email', type: 'email', label: 'Email', required: true }
                 ].map((field) => (
                   <div key={field.id}>
                     <label htmlFor={field.id} className="block text-sm font-medium text-slate-300 mb-1">
@@ -101,7 +100,7 @@ const Contact = () => {
                       value={formData[field.id as keyof FormData]}
                       onChange={handleChange}
                       required={field.required}
-                      className="w-full px-3 sm:px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-lg 
+                      className="w-full px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-lg 
                                text-slate-100 focus:ring-2 focus:ring-violet-600 focus:border-transparent
                                placeholder-slate-500"
                     />
@@ -118,7 +117,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-lg 
+                    className="w-full px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-lg 
                              text-slate-100 focus:ring-2 focus:ring-violet-600 focus:border-transparent
                              placeholder-slate-500"
                   ></textarea>
@@ -146,4 +145,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
