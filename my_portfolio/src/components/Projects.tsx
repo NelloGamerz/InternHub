@@ -199,7 +199,7 @@ const projects = [
     description: 'Weather Websiter made with React and TypeScript.',
     image: skyCast,
     tech: ['React', 'Tailwwind CSS'],
-    github: 'https://github.com/NelloGamerz/Weather-App',
+    github: 'https://github.com/NelloGamerz/InternHub/tree/main/weather',
     live: 'https://sky-cast-lake.vercel.app/'
   },
   {
