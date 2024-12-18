@@ -32,6 +32,7 @@ const projects = [
     description: 'QR Code Generator and Scanner made with java in Android Studio.',
     image: qr,
     tech: ['Android Studio', 'Java'],
+    github: 'https://github.com/NelloGamerz/QR-Generator',
     live : 'https://drive.google.com/file/d/1LrRtdrbiWLlyjwysmUF2qizaU40kfUw_/view?usp=drive_link'
   },
   {
