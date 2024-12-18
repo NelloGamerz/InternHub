@@ -8,6 +8,7 @@ import SectionTitle from './ui/SectionTitle';
 import extension from '../../public/images/Chrome_Extension.png';
 import skyCast from '../../public/images/SkyCast.png';
 import music from '../../public/images/Music App Image.jpg';
+import qr from '..//..//public/images/qr code.png';
 
 const projects = [
   {
@@ -25,6 +26,13 @@ const projects = [
     tech: ['React', 'Tailwwind CSS'],
     github: 'https://github.com/NelloGamerz/InternHub/tree/main/weather',
     live: 'https://sky-cast-lake.vercel.app/'
+  },
+  {
+    title: 'QR Code Generator and Scanner',
+    description: 'QR Code Generator and Scanner made with java in Android Studio.',
+    image: qr,
+    tech: ['Android Studio', 'Java'],
+    live : 'https://drive.google.com/file/d/1LrRtdrbiWLlyjwysmUF2qizaU40kfUw_/view?usp=drive_link'
   },
   {
     title: 'Chrome Extension',
