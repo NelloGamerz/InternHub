@@ -17,8 +17,8 @@ const projects = [
     description: 'A website where users can browse and create memes easily.',
     image: memeWebsite,
     tech: ['React', 'Spring Boot', 'MongoDB', 'Redis', 'Docker'],
-    github: 'https://github.com/NelloGamerz/Meme-Vault', // Replace with your actual GitHub URL
-    live: 'https://meme-vault-blond.vercel.app/' // Replace with your live website URL
+    github: 'https://github.com/NelloGamerz/Meme-Vault',
+    live: 'https://meme-vault-blond.vercel.app/'
   },
   {
     title: 'Music Streaming App',
