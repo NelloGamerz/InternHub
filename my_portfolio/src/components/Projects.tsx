@@ -9,8 +9,17 @@ import extension from '../../public/images/Chrome_Extension.png';
 import skyCast from '../../public/images/SkyCast.png';
 import music from '../../public/images/Music App Image.jpg';
 import qr from '..//..//public/images/qr code.png';
+import memeWebsite from '..//..//public/images/memeWebsite.png'
 
 const projects = [
+  {
+    title: 'Meme Vault',
+    description: 'A website where users can browse and create memes easily.',
+    image: memeWebsite,
+    tech: ['React', 'Spring Boot', 'MongoDB', 'Redis', 'Docker'],
+    github: 'https://github.com/NelloGamerz/Meme-Vault', // Replace with your actual GitHub URL
+    live: 'https://meme-vault-blond.vercel.app/' // Replace with your live website URL
+  },
   {
     title: 'Music Streaming App',
     description: 'A modern Music Streaming Android App built with kotiln and Firebase.',

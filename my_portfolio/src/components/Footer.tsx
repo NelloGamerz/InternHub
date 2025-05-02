@@ -96,7 +96,7 @@ const Footer = () => {
               {[
                 { icon: Github, href: 'https://github.com/NelloGamerz', label: 'GitHub' },
                 { icon: Linkedin, href: 'https://linkedin.com/in/karan-pareek-337067270', label: 'LinkedIn' },
-                { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' }
+                { icon: Mail, href: 'mailto:softwaredev1112@gmail.com', label: 'Email' }
               ].map((social, index) => (
                 <motion.a
                   key={index}
