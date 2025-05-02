@@ -8,26 +8,25 @@ const skillCategories = [
     name: 'All',
     skills: [
       { name: 'React.js', level: 85 },
-      { name: 'JavaScript', level: 90 },
       { name: 'TypeScript', level: 80 },
       { name: 'HTML/CSS', level: 95 },
       { name: 'Tailwind CSS', level: 85 },
       { name: 'Java', level: 80 },
-      { name: 'Kotlin', level: 70},
-      { name: 'Node.js', level: 75 },
-      { name: 'Express.js', level: 70 },
-      { name: 'Git', level: 80 },
+      { name: 'Kotlin', level: 70 },
+      { name: 'Spring Boot', level: 75 },
       { name: 'Firebase', level: 80 },
-      { name: 'MongoDB', level: 80},
-      { name: 'Android Studio', level : 80},
-      { name: 'Google Cloud', level: 80},
+      { name: 'MongoDB', level: 80 },
+      { name: 'Android Studio', level: 80 },
+      { name: 'Google Cloud', level: 80 },
+      { name: 'Git', level: 80 },
+      { name: 'Docker', level: 75 },
+      { name: 'Redis', level: 70 },
     ]
   },
   {
     name: 'Frontend',
     skills: [
       { name: 'React.js', level: 85 },
-      { name: 'JavaScript', level: 90 },
       { name: 'TypeScript', level: 80 },
       { name: 'HTML/CSS', level: 95 },
       { name: 'Tailwind CSS', level: 85 },
@@ -37,27 +36,30 @@ const skillCategories = [
     name: 'Backend',
     skills: [
       { name: 'Java', level: 80 },
-      { name: 'Kotlin', level: 70},
-      { name: 'Node.js', level: 75 },
-      { name: 'Express.js', level: 70 },
+      { name: 'Kotlin', level: 70 },
+      { name: 'Spring Boot', level: 75 },
       { name: 'Firebase', level: 80 },
+      { name: 'Redis', level: 70 },
     ]
   },
   {
     name: 'Tools & Others',
     skills: [
       { name: 'Git', level: 80 },
-      { name: 'Android Studio', level : 80},
-      { name: 'Google Cloud', level: 80},
+      { name: 'Android Studio', level: 80 },
+      { name: 'Google Cloud', level: 80 },
+      { name: 'Docker', level: 75 },
     ]
   },
   {
     name: 'Database',
-    skills:[
-      {name: 'MongoDB', level: 80}
+    skills: [
+      { name: 'MongoDB', level: 80 },
+      { name: 'Redis', level: 70 },
     ]
   }
 ];
+
 
 const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
