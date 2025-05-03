@@ -71,7 +71,7 @@ const Hero = () => {
             <GlowingButton href="#projects">
               View Projects
             </GlowingButton>
-            <GlowingButton href="https://drive.google.com/file/d/1Plf-UyR_i7Mdj252wH5k14EDIwi8voin/view?usp=drive_link">
+            <GlowingButton href="https://drive.google.com/file/d/1QVdvGrINfP7S2nzrh4Jii8qR6k3mXrWn/view?usp=sharing">
               Download Resume
             </GlowingButton>
           </motion.div>
