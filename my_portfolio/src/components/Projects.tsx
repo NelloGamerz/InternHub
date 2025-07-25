@@ -18,7 +18,7 @@ const projects = [
     image: memeWebsite,
     tech: ['React', 'Spring Boot', 'MongoDB', 'Redis', 'Docker'],
     github: 'https://github.com/NelloGamerz/Meme-Vault',
-    live: 'https://meme-vault-blond.vercel.app/'
+    live: 'https://meme-vault-ten.vercel.app/'
   },
   {
     title: 'Music Streaming App',
